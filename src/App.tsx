@@ -94,7 +94,7 @@ function App() {
         </div>
         <a className="font-bold text-lg">About</a>
       </header>
-      <main className="flex justify-center items-center h-screen bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700 dark:bg-gray-800">
+      <main className="flex justify-center items-center h-screen bg-gradient-to-r from-blue-500 to-purple-700 dark:bg-gray-800">
         <div className="flex flex-col justify-between w-4/6 h-5/6 p-10  rounded shadow-xl border-2">
           <div>
             <div className="flex flex-col md:flex-row items-end justify-center mb-4">
@@ -134,7 +134,6 @@ function App() {
               </>
             ) : (
               <>
-                
                 <h1 className="font-bold text-3xl mb-4">
                   {iftaarMessage.message || "Iftaar in"}
                 </h1>
