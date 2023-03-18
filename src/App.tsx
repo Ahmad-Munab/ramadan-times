@@ -88,16 +88,16 @@ function App() {
 
   return (
     <div className="h-screen w-screen flex flex-col text-inherit dark:bg-gray-900 dark:text-gray-50">
-      <header className="w-screen bg-gray-800 text-gray-50 px-7 py-3 flex justify-between">
+      {/* <header className="w-screen bg-gray-800 text-gray-50 px-7 py-3 flex justify-between">
         <div className="flex items-center">
           <img src="logo.png" alt="LOGO" className="h-8 w-8 mr-2" />
         </div>
         <a className="font-bold text-lg">About</a>
-      </header>
-      <main className="flex justify-center items-center h-screen bg-gradient-to-r from-blue-500 to-purple-700 dark:bg-gray-800">
-        <div className="flex flex-col justify-between w-4/6 h-5/6 p-10  rounded shadow-xl border-2">
+      </header> */}
+      <main className="flex justify-center items-center h-screen ">
+        <div className="flex flex-col justify-between h-5/6 w-4/5 max-w-3xl py-10 px-2 rounded-xl shadow-2xl border-4">
           <div>
-            <div className="flex flex-col md:flex-row items-end justify-center mb-4">
+            <div className="flex flex-col  md:flex-row items-center md:items-end justify-center mb-4">
               <h2 className="text-5xl font-bold">
                 Ramadan: {currentDay[0].day}
               </h2>
@@ -137,7 +137,7 @@ function App() {
                 <h1 className="font-bold text-3xl mb-4">
                   {iftaarMessage.message || "Iftaar in"}
                 </h1>
-                <div className="flex gap-8 justify-center w-full dark:text-gray-50">
+                <div className="flex gap-4 justify-center w-full dark:text-gray-50">
                   <div className="bg-gray-50 rounded-xl w-20 h-20 p-3 flex flex-col">
                     <p className="text-gray-700 font-black text-4xl">
                       {iftaarMessage.time.hours}
@@ -160,7 +160,7 @@ function App() {
               </>
             )}
           </div>
-          <div className="flex flex-col md:flex-row justify-center gap-4">
+          <div className="flex flex-col md:flex-row justify-center items-center  gap-4">
             <p className="text-2xl font-bold dark:text-gray-50">
               Iftaar: {formattedIftaarTime}
             </p>
