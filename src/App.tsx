@@ -95,7 +95,7 @@ function App() {
         <a className="font-bold text-lg">About</a>
       </header> */}
       <main className="flex justify-center items-center h-screen bg-[url('./images/bg.jpg')] bg-cover bg-no-repeat">
-        <div className="flex flex-col justify-between h-5/6 w-4/5 max-w-3xl py-10 px-3 rounded-xl shadow-2xl border-4">
+        <div className="flex flex-col justify-between h-5/6 w-4/5 max-w-3xl py-10 px-3 rounded-xl shadow-[0_50px_180px_0_rgba(0,0,0,0.9)] border-4">
           <div>
             <div className="flex flex-col  md:flex-row items-center md:items-end justify-center mb-4">
               <h2 className="text-4xl md:text-5xl font-bold">
@@ -111,7 +111,7 @@ function App() {
                 <h1 className="font-bold text-3xl md:text-4xl mb-4">
                   {sehriMessage.message || "Sehri ends in"}
                 </h1>
-                <div className="flex gap-4 justify-center w-full dark:text-gray-50">
+                <div className="flex gap-4 justify-center w-full dark:text-gray-50 countdown">
                   <div className="bg-gray-50 rounded-xl w-20 h-20 p-3 flex flex-col">
                     <p className="text-gray-700 font-black text-4xl">
                       {iftaarMessage.time.hours}
@@ -137,7 +137,7 @@ function App() {
                 <h1 className="font-bold text-3xl md:text-4xl mb-4">
                   {iftaarMessage.message || "Iftaar in"}
                 </h1>
-                <div className="flex gap-4 justify-center w-full dark:text-gray-50">
+                <div className="flex gap-4 justify-center w-full dark:text-gray-50 countdown">
                   <div className="bg-gray-50 rounded-xl w-20 h-20 p-3 flex flex-col">
                     <p className="text-gray-700 font-black text-4xl">
                       {iftaarMessage.time.hours}
