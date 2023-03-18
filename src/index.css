@@ -18,6 +18,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 1.04rem;
+}
+
 main {
   /* font-family: "Roboto", sans-serif; */
   font-family: "Courgette", cursive;
@@ -25,5 +29,5 @@ main {
 }
 
 .countdown {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
 }
